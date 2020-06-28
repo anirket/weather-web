@@ -1,3 +1,4 @@
+const preloader = document.querySelector(".preloader");
 window.addEventListener('load', () => {
     let longitude;
     let latitude;
@@ -23,6 +24,8 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
+                 preloader.style.display = "none";
+                 preloader.style.pointerEvents = "none";
 
                     const { temp_f, condition } = data.current;
                     degree.textContent = temp_f;

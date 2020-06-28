@@ -4,32 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather website</title>
+    <title>preloader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/eeb68990ce.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1 class = "error"></h1>
-    <div class="location">
-        <h1 class="location-timezone">Timezone</h1>
-        <p class="icon"></p>
+    <div class="preloader" >
+        <img class="panda"src="./img/panda-min-min.png" alt="">
+        <h3>Loading...</h3>
+        <i class="fas fa-spinner"></i>
     </div>
-    <div class="temprature">
-        <div class="degree-section">
-        <h2 class="temprature-degree">34</h2>
-        <span>F</span>
+    <div class="wrapper">
+        <div class="location">
+            <h1 class="location-timezone">Timezone</h1>
+            <p class="icon"></p>
         </div>
-        <div class="temprature-description">
-            its friggin cold
+        <div class="temprature">
+            <div class="degree-section">
+                <h2 class="temprature-degree">34</h2>
+                <span>F</span>
+            </div>
+            <div class="temprature-description">
+                its friggin cold
+            </div>
+
         </div>
+        <div class="current-location">
+            <h5></h5>
+            <h6></h6>
 
+        </div>
     </div>
-    <div class="current-location">
-        <h5></h5>
-        <h6></h6>
-
-    </div>
-
 
 
 
