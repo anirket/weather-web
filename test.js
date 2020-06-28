@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
                     const { temp_f, condition } = data.current;
                     degree.textContent = temp_f;
                     description.textContent = condition.text;
-                    timezone1.textContent = data.location.tz_id;
+                    timezone1.innerHTML = `Timezone:<br>${data.location.tz_id}`;
                     icon.innerHTML = `<img src="${data.current.condition.icon}"<>`;
                     //change to celcius
                     temperaturesection.addEventListener('click', () => {

@@ -81,3 +81,11 @@ i{
     margin-top: 20px;
     text-align: center;
 }
+@media only screen and (max-width : 600px){
+    .panda{
+        width: 70%;
+        height: 40%;
+    }
+
+
+}
